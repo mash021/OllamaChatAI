@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #efe9d5; /* رنگ پس‌زمینه اصلی */
+}
+
+header {
+  background-color: #27445d; /* رنگ سربرگ */
+  color: #efe9d5; /* رنگ نوشته سربرگ */
+  padding: 1rem;
+  text-align: center;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #71bbb2; /* رنگ پیام کاربر */
+  color: #27445d; /* رنگ متن پیام کاربر */
+}
+
+.message.assistant {
+  align-self: flex-start;
+  background-color: #497d74; /* رنگ پیام دستیار */
+  color: #efe9d5; /* رنگ متن پیام دستیار */
+}
+
+.input-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#sendBtn {
+  background-color: #27445d; /* رنگ دکمه */
+  color: #efe9d5;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#sendBtn:hover {
+  background-color: #497d74;
+}
