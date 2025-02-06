@@ -74,3 +74,28 @@ header {
 #sendBtn:hover {
   background-color: #497d74;
 }
+ 
+.messages {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.messages p {
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  line-height: 1.5; /* فاصله‌ی مناسب بین خطوط */
+  word-wrap: break-word;
+  white-space: pre-wrap; /* حفظ فرمت متنی */
+}
+
+.user {
+  background-color: #d1e7dd; /* رنگ سبز ملایم */
+  text-align: right;
+}
+
+.assistant {
+  background-color: #f8d7da; /* رنگ قرمز ملایم */
+  text-align: left;
+}
